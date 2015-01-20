@@ -1,0 +1,11 @@
+/* line 4, /Users/twer/dev/3d3p/scss/style.scss */
+body, section, form, header, ul, li, input, button, imh, h1, h2 {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* line 10, /Users/twer/dev/3d3p/scss/style.scss */
+li:hover {
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */
