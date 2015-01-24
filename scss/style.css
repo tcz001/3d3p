@@ -6,78 +6,175 @@ body, section, form, header, ul, li, input, button, img, h1, h2 {
 
 /* line 10, /Users/twer/dev/3d3p/scss/style.scss */
 body {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: sans-serif; }
 
-/* line 14, /Users/twer/dev/3d3p/scss/style.scss */
+/* line 19, /Users/twer/dev/3d3p/scss/style.scss */
 section.hero {
   max-width: 100em;
   margin: 0 auto;
-  background: url(http://placekitten.com/g/800/300);
-  background-size: cover; }
-
-/* line 21, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero header img {
-  float: left;
-  width: 120px;
-  height: 50px;
-  margin-left: 1em;
-  margin-top: 1em; }
-
-/* line 29, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero header ul {
-  float: right;
-  margin-right: 1em;
-  margin-top: 1em; }
-
-/* line 35, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero header ul li {
-  list-style: none;
-  float: left;
-  margin-left: 2em;
-  border-radius: 4px; }
-
-/* line 42, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero header ul li:last-child {
-  border: 1px solid white; }
-
-/* line 46, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero h1, h2 {
-  clear: both;
-  text-align: center;
-  padding-top: 2em; }
-
-/* line 51, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero h1 {
-  font-size: 4em; }
-
-/* line 54, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero h2 {
-  font-size: 2em; }
-
-/* line 57, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero {
+  background: url(http://placekitten.com/1000/600);
+  background-size: cover;
   color: white; }
+  /* line 24, /Users/twer/dev/3d3p/scss/style.scss */
+  section.hero img {
+    float: left;
+    width: 120px;
+    height: 50px;
+    margin-left: 1em;
+    margin-top: 1em; }
+  /* line 31, /Users/twer/dev/3d3p/scss/style.scss */
+  section.hero header ul {
+    float: right;
+    margin-right: 1em;
+    margin-top: 1em; }
+    /* line 35, /Users/twer/dev/3d3p/scss/style.scss */
+    section.hero header ul li {
+      list-style: none;
+      float: left;
+      margin-left: 2em;
+      border-radius: 4px;
+      padding: 2px; }
+    /* line 42, /Users/twer/dev/3d3p/scss/style.scss */
+    section.hero header ul li:last-child {
+      border: 1px solid white; }
+  /* line 46, /Users/twer/dev/3d3p/scss/style.scss */
+  section.hero h1, section.hero h2 {
+    clear: both;
+    text-align: center;
+    opacity: 0.8; }
+  /* line 51, /Users/twer/dev/3d3p/scss/style.scss */
+  section.hero h1 {
+    font-size: 1.5em;
+    padding-top: 4em; }
+  /* line 55, /Users/twer/dev/3d3p/scss/style.scss */
+  section.hero h2 {
+    font-size: 1em;
+    color: #ddd;
+    padding-top: 0.5em; }
+  /* line 60, /Users/twer/dev/3d3p/scss/style.scss */
+  section.hero form {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 20em; }
+    /* line 64, /Users/twer/dev/3d3p/scss/style.scss */
+    section.hero form input {
+      width: 20em;
+      height: 2em;
+      background: rgba(255, 255, 255, 0.6); }
+    /* line 69, /Users/twer/dev/3d3p/scss/style.scss */
+    section.hero form button {
+      background-color: gray;
+      color: white;
+      padding: 0.5em;
+      height: 2em; }
 
-/* line 60, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero h2 {
-  font-size: 2em; }
+/* line 78, /Users/twer/dev/3d3p/scss/style.scss */
+section.numbers {
+  max-width: 100em;
+  margin: 0 auto;
+  position: relative;
+  top: -3em; }
+  /* line 82, /Users/twer/dev/3d3p/scss/style.scss */
+  section.numbers ul {
+    margin: 0 10%; }
+    /* line 84, /Users/twer/dev/3d3p/scss/style.scss */
+    section.numbers ul li {
+      list-style: none;
+      display: block;
+      float: left;
+      width: 25%;
+      background: #fffffa;
+      text-align: center;
+      position: relative;
+      border: 1px solid #ddd;
+      border-right: 0px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box; }
+      /* line 97, /Users/twer/dev/3d3p/scss/style.scss */
+      section.numbers ul li h3 {
+        font-size: 2em;
+        font-family: monospace;
+        font: bold; }
+      /* line 102, /Users/twer/dev/3d3p/scss/style.scss */
+      section.numbers ul li h4 {
+        clear: both;
+        color: #777; }
+  /* line 108, /Users/twer/dev/3d3p/scss/style.scss */
+  section.numbers :first-child li {
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 0.5em; }
+  /* line 112, /Users/twer/dev/3d3p/scss/style.scss */
+  section.numbers :last-child li {
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-right: 1px solid #ddd; }
 
-/* line 63, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero form {
-  text-align: center;
-  padding: 4em; }
-
-/* line 67, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero form input {
-  width: 20em;
-  height: 2em;
-  background: rgba(255, 255, 255, 0.6); }
-
-/* line 72, /Users/twer/dev/3d3p/scss/style.scss */
-section.hero form button {
-  background-color: gray;
-  color: white;
-  padding: 0.5em;
-  height: 2em; }
+/* line 118, /Users/twer/dev/3d3p/scss/style.scss */
+section.how-it-works {
+  max-width: 100em;
+  margin: 0 auto; }
+  /* line 121, /Users/twer/dev/3d3p/scss/style.scss */
+  section.how-it-works ul {
+    margin: 0 10%; }
+    /* line 123, /Users/twer/dev/3d3p/scss/style.scss */
+    section.how-it-works ul li {
+      list-style: none;
+      text-align: center;
+      display: block;
+      float: left;
+      width: 33.3%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box; }
+    /* line 143, /Users/twer/dev/3d3p/scss/style.scss */
+    section.how-it-works ul li.middle:before {
+      content: '';
+      top: 100px;
+      float: left;
+      display: block;
+      position: relative;
+      top: 2em;
+      height: 1px;
+      background: #ccc;
+      float: left;
+      width: 100%; }
+    /* line 148, /Users/twer/dev/3d3p/scss/style.scss */
+    section.how-it-works ul li.left:before {
+      content: '';
+      top: 100px;
+      float: left;
+      display: block;
+      position: relative;
+      top: 2em;
+      height: 1px;
+      background: #ccc;
+      float: right;
+      width: 50%; }
+    /* line 153, /Users/twer/dev/3d3p/scss/style.scss */
+    section.how-it-works ul li.right:before {
+      content: '';
+      top: 100px;
+      float: left;
+      display: block;
+      position: relative;
+      top: 2em;
+      height: 1px;
+      background: #ccc;
+      float: left;
+      width: 50%; }
+    /* line 158, /Users/twer/dev/3d3p/scss/style.scss */
+    section.how-it-works ul li cycle {
+      background: #fffffa;
+      float: left;
+      line-height: 4em;
+      width: 4em;
+      height: 4em;
+      margin: 0 40%;
+      text-align: center;
+      position: relative;
+      border-radius: 100%;
+      border: 1px solid #ccc; }
 
 /*# sourceMappingURL=style.css.map */
