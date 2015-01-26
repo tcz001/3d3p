@@ -27,6 +27,7 @@ section.hero{
         height: 50px;
         margin-left: 1em;
         margin-top: 1em;
+        opacity: .3;
     }
     header ul{
         float: right;
@@ -34,13 +35,21 @@ section.hero{
         margin-top: 1em;
         li{
             list-style: none;
+            line-height: 2em;
             float: left;
             margin-left: 2em;
             border-radius: 4px;
             padding: 2px;
+            opacity: .8;
+        }
+        li:hover{
+            opacity: 1;
         }
         li:last-child{
             border: 1px solid white;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
         }
     }
     h1,h2{
@@ -62,15 +71,33 @@ section.hero{
         padding-top: 1em;
         padding-bottom: 20em;
         input{
-            width: 20em;
+            width: 10em;
             height: 2em;
             background: rgba(255,255,255,.6);
+            transition: all .25s;
+            border-radius: 1em;
+                        padding: 0 .5em;
+
+        }
+        input:focus{
+            width: 20em;
+        }
+        input::-webkit-input-placeholder { 
+            padding: 0 .5em;
+            color: white;
+            opacity: .6
         }
         button{
             background-color: gray;
+            line-height: 1em;
             color: white;
             padding: 0.5em;
             height: 2em;
+            border-radius: .5em;
+            opacity: .6;
+        }
+        button:hover{
+            opacity: 1;
         }
         
     }
