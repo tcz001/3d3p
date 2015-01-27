@@ -15,6 +15,31 @@ body{
     max-width: 100em;
     margin: 0 auto;
 }
+@mixin common-bars{
+    content: '';
+    display: block;
+    position: relative;
+    top: 2em;
+    height: 2px;
+    background: #ccc;
+    left: calc( -50% + 2em );
+    width: calc( 100% - 4em );
+}
+@mixin sub-title{
+    position: relative;
+    margin: 0 10%;
+    height: 100px;
+    text-align: center;
+    font-size: 1.5em;
+    &:after{
+        content: '';
+        display: block;
+        margin: 0 auto;
+        height: 2px;
+        width: 4em;
+        background: #ccc;
+    }
+}
 
 section.hero{
     @include common-sections();
@@ -76,8 +101,6 @@ section.hero{
             background: rgba(255,255,255,.6);
             transition: all .25s;
             border-radius: 1em;
-                        padding: 0 .5em;
-
         }
         input:focus{
             width: 20em;
@@ -94,6 +117,7 @@ section.hero{
             padding: 0.5em;
             height: 2em;
             border-radius: .5em;
+            margin: 0 .5em;
             opacity: .6;
         }
         button:hover{
@@ -144,55 +168,38 @@ section.numbers{
 }
 section.how-it-works{
     @include common-sections();
-
+    .subject{
+        @include sub-title();
+    }
     ul{
         margin: 0 10%;
         li{
             list-style: none;
             text-align: center;
-            display: block;
             float: left;
             width: 33.3%;
             box-sizing: border-box; 
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
         }
-        @mixin common-bars{
-            content: '';
-            top: 100px;
-            float: left;
-            display: block;
-            position: relative;
-            top: 2em;
-            height: 1px;
-            background: #ccc;
-        }
-        li.middle:before{
+        li.middle, li.right{
+            &:before{
             @include common-bars();
-            float: left;
-            width: 100%;
+            }
         }
-        li.left:before{
-            @include common-bars();
-            float: right;
-            width: 50%;
-        }
-        li.right:before{
-            @include common-bars();
-            float: left;
-            width: 50%;
-        }
-        li cycle{
+        li .cycle{
             background:  rgba(255,255,250,1);
-            float: left;
             line-height: 4em;
             width: 4em;
             height: 4em;
-            margin: 0 40%;
+            margin: 0 auto;
             text-align: center;
             position: relative;
             border-radius: 100%;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
         }
     }
+}
+section.why-choose-us{
+    @include common-sections();
 }

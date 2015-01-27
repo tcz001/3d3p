@@ -9,14 +9,14 @@ body {
   font-size: 62.5%;
   font-family: sans-serif; }
 
-/* line 19, /Users/twer/dev/3d3p/scss/style.scss */
+/* line 44, /Users/twer/dev/3d3p/scss/style.scss */
 section.hero {
   max-width: 100em;
   margin: 0 auto;
   background: url(http://placekitten.com/1000/600);
   background-size: cover;
   color: white; }
-  /* line 24, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 49, /Users/twer/dev/3d3p/scss/style.scss */
   section.hero img {
     float: left;
     width: 120px;
@@ -24,12 +24,12 @@ section.hero {
     margin-left: 1em;
     margin-top: 1em;
     opacity: 0.3; }
-  /* line 32, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 57, /Users/twer/dev/3d3p/scss/style.scss */
   section.hero header ul {
     float: right;
     margin-right: 1em;
     margin-top: 1em; }
-    /* line 36, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 61, /Users/twer/dev/3d3p/scss/style.scss */
     section.hero header ul li {
       list-style: none;
       line-height: 2em;
@@ -38,51 +38,50 @@ section.hero {
       border-radius: 4px;
       padding: 2px;
       opacity: 0.8; }
-    /* line 45, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 70, /Users/twer/dev/3d3p/scss/style.scss */
     section.hero header ul li:hover {
       opacity: 1; }
-    /* line 48, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 73, /Users/twer/dev/3d3p/scss/style.scss */
     section.hero header ul li:last-child {
       border: 1px solid white;
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box; }
-  /* line 55, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 80, /Users/twer/dev/3d3p/scss/style.scss */
   section.hero h1, section.hero h2 {
     clear: both;
     text-align: center;
     opacity: 0.8; }
-  /* line 60, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 85, /Users/twer/dev/3d3p/scss/style.scss */
   section.hero h1 {
     font-size: 1.5em;
     padding-top: 4em; }
-  /* line 64, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 89, /Users/twer/dev/3d3p/scss/style.scss */
   section.hero h2 {
     font-size: 1em;
     color: #ddd;
     padding-top: 0.5em; }
-  /* line 69, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 94, /Users/twer/dev/3d3p/scss/style.scss */
   section.hero form {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 20em; }
-    /* line 73, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 98, /Users/twer/dev/3d3p/scss/style.scss */
     section.hero form input {
       width: 10em;
       height: 2em;
       background: rgba(255, 255, 255, 0.6);
       transition: all 0.25s;
-      border-radius: 1em;
-      padding: 0 0.5em; }
-    /* line 82, /Users/twer/dev/3d3p/scss/style.scss */
+      border-radius: 1em; }
+    /* line 105, /Users/twer/dev/3d3p/scss/style.scss */
     section.hero form input:focus {
       width: 20em; }
-    /* line 85, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 108, /Users/twer/dev/3d3p/scss/style.scss */
     section.hero form input::-webkit-input-placeholder {
       padding: 0 0.5em;
       color: white;
       opacity: 0.6; }
-    /* line 90, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 113, /Users/twer/dev/3d3p/scss/style.scss */
     section.hero form button {
       background-color: gray;
       line-height: 1em;
@@ -90,21 +89,22 @@ section.hero {
       padding: 0.5em;
       height: 2em;
       border-radius: 0.5em;
+      margin: 0 0.5em;
       opacity: 0.6; }
-    /* line 99, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 123, /Users/twer/dev/3d3p/scss/style.scss */
     section.hero form button:hover {
       opacity: 1; }
 
-/* line 105, /Users/twer/dev/3d3p/scss/style.scss */
+/* line 129, /Users/twer/dev/3d3p/scss/style.scss */
 section.numbers {
   max-width: 100em;
   margin: 0 auto;
   position: relative;
   top: -3em; }
-  /* line 109, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 133, /Users/twer/dev/3d3p/scss/style.scss */
   section.numbers ul {
     margin: 0 10%; }
-    /* line 111, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 135, /Users/twer/dev/3d3p/scss/style.scss */
     section.numbers ul li {
       list-style: none;
       display: block;
@@ -118,89 +118,81 @@ section.numbers {
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box; }
-      /* line 124, /Users/twer/dev/3d3p/scss/style.scss */
+      /* line 148, /Users/twer/dev/3d3p/scss/style.scss */
       section.numbers ul li h3 {
         font-size: 2em;
         font-family: monospace;
         font: bold; }
-      /* line 129, /Users/twer/dev/3d3p/scss/style.scss */
+      /* line 153, /Users/twer/dev/3d3p/scss/style.scss */
       section.numbers ul li h4 {
         clear: both;
         color: #777; }
-  /* line 135, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 159, /Users/twer/dev/3d3p/scss/style.scss */
   section.numbers :first-child li {
     border-bottom-left-radius: 0.5em;
     border-top-left-radius: 0.5em; }
-  /* line 139, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 163, /Users/twer/dev/3d3p/scss/style.scss */
   section.numbers :last-child li {
     border-bottom-right-radius: 0.5em;
     border-top-right-radius: 0.5em;
     border-right: 1px solid #ddd; }
 
-/* line 145, /Users/twer/dev/3d3p/scss/style.scss */
+/* line 169, /Users/twer/dev/3d3p/scss/style.scss */
 section.how-it-works {
   max-width: 100em;
   margin: 0 auto; }
-  /* line 148, /Users/twer/dev/3d3p/scss/style.scss */
+  /* line 171, /Users/twer/dev/3d3p/scss/style.scss */
+  section.how-it-works .subject {
+    position: relative;
+    margin: 0 10%;
+    height: 100px;
+    text-align: center;
+    font-size: 1.5em; }
+    /* line 34, /Users/twer/dev/3d3p/scss/style.scss */
+    section.how-it-works .subject:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      height: 2px;
+      width: 4em;
+      background: #ccc; }
+  /* line 174, /Users/twer/dev/3d3p/scss/style.scss */
   section.how-it-works ul {
     margin: 0 10%; }
-    /* line 150, /Users/twer/dev/3d3p/scss/style.scss */
+    /* line 176, /Users/twer/dev/3d3p/scss/style.scss */
     section.how-it-works ul li {
       list-style: none;
       text-align: center;
-      display: block;
       float: left;
       width: 33.3%;
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box; }
-    /* line 170, /Users/twer/dev/3d3p/scss/style.scss */
-    section.how-it-works ul li.middle:before {
+    /* line 186, /Users/twer/dev/3d3p/scss/style.scss */
+    section.how-it-works ul li.middle:before, section.how-it-works ul li.right:before {
       content: '';
-      top: 100px;
-      float: left;
       display: block;
       position: relative;
       top: 2em;
-      height: 1px;
+      height: 2px;
       background: #ccc;
-      float: left;
-      width: 100%; }
-    /* line 175, /Users/twer/dev/3d3p/scss/style.scss */
-    section.how-it-works ul li.left:before {
-      content: '';
-      top: 100px;
-      float: left;
-      display: block;
-      position: relative;
-      top: 2em;
-      height: 1px;
-      background: #ccc;
-      float: right;
-      width: 50%; }
-    /* line 180, /Users/twer/dev/3d3p/scss/style.scss */
-    section.how-it-works ul li.right:before {
-      content: '';
-      top: 100px;
-      float: left;
-      display: block;
-      position: relative;
-      top: 2em;
-      height: 1px;
-      background: #ccc;
-      float: left;
-      width: 50%; }
-    /* line 185, /Users/twer/dev/3d3p/scss/style.scss */
-    section.how-it-works ul li cycle {
+      left: calc( -50% + 2em);
+      width: calc( 100% - 4em); }
+    /* line 190, /Users/twer/dev/3d3p/scss/style.scss */
+    section.how-it-works ul li .cycle {
       background: #fffffa;
-      float: left;
       line-height: 4em;
       width: 4em;
       height: 4em;
-      margin: 0 40%;
+      margin: 0 auto;
       text-align: center;
       position: relative;
       border-radius: 100%;
-      border: 1px solid #ccc; }
+      border: 2px solid #ccc; }
+
+/* line 203, /Users/twer/dev/3d3p/scss/style.scss */
+section.why-choose-us {
+  max-width: 100em;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
